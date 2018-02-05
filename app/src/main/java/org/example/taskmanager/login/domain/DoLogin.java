@@ -6,7 +6,7 @@ import android.os.Looper;
 import org.example.taskmanager.base.Error;
 import org.example.taskmanager.base.UseCase;
 import org.example.taskmanager.entities.User;
-import org.example.taskmanager.login.UserRepository;
+import org.example.taskmanager.login.repository.UserRepository;
 
 import javax.inject.Inject;
 

@@ -2,16 +2,12 @@ package org.example.taskmanager;
 
 import android.app.Application;
 
-import org.example.taskmanager.base.APIService;
-import org.example.taskmanager.base.ItemsDataSource;
-import org.example.taskmanager.base.RetrofitClient;
 import org.example.taskmanager.di.DaggerMainComponent;
 import org.example.taskmanager.di.MainComponent;
-import org.example.taskmanager.entities.TaskType;
-import org.example.taskmanager.login.LocalDbPopulator;
-import org.example.taskmanager.login.RealmProvider;
-import org.example.taskmanager.login.UserRealmDataSource;
-import org.example.taskmanager.login.UserRepository;
+import org.example.taskmanager.base.LocalDbPopulator;
+import org.example.taskmanager.base.RealmProvider;
+import org.example.taskmanager.login.repository.datasource.UserRealmDataSource;
+import org.example.taskmanager.login.repository.UserRepository;
 
 import io.realm.Realm;
 

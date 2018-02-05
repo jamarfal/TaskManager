@@ -1,21 +1,15 @@
-package org.example.taskmanager.login;
+package org.example.taskmanager.login.repository.datasource;
 
 import android.support.annotation.NonNull;
 
-import org.example.taskmanager.base.UseCase;
-import org.example.taskmanager.entities.Task;
+import org.example.taskmanager.base.DataSourceProvider;
 import org.example.taskmanager.entities.User;
-import org.example.taskmanager.login.domain.LoginParams;
 
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 import javax.inject.Inject;
 
 import io.realm.Realm;
-import io.realm.RealmList;
-import io.realm.RealmResults;
 
 /**
  * Created by josealbertomartinfalcon on 3/2/18.

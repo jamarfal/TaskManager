@@ -1,10 +1,11 @@
-package org.example.taskmanager.login;
+package org.example.taskmanager.base;
 
 import org.example.taskmanager.entities.RealmInt;
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.entities.TaskType;
 import org.example.taskmanager.entities.User;
 import org.example.taskmanager.entities.UserTypeDescriptor;
+import org.example.taskmanager.login.repository.UserRepository;
 
 import java.util.ArrayList;
 import java.util.Date;

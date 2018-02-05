@@ -3,12 +3,12 @@ package org.example.taskmanager.di;
 
 import org.example.taskmanager.base.APIService;
 import org.example.taskmanager.base.RetrofitClient;
-import org.example.taskmanager.login.RealmProvider;
-import org.example.taskmanager.login.TaskDataSource;
-import org.example.taskmanager.login.TaskRealmDataSource;
-import org.example.taskmanager.login.UserDataSource;
-import org.example.taskmanager.login.UserRealmDataSource;
-import org.example.taskmanager.login.UserRepository;
+import org.example.taskmanager.base.RealmProvider;
+import org.example.taskmanager.task.TaskDataSource;
+import org.example.taskmanager.task.TaskRealmDataSource;
+import org.example.taskmanager.login.repository.datasource.UserDataSource;
+import org.example.taskmanager.login.repository.datasource.UserRealmDataSource;
+import org.example.taskmanager.login.repository.UserRepository;
 
 import javax.inject.Singleton;
 

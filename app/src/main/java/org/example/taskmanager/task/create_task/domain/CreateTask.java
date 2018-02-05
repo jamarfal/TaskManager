@@ -8,9 +8,8 @@ import org.example.taskmanager.base.Error;
 import org.example.taskmanager.base.UseCase;
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.entities.User;
-import org.example.taskmanager.login.TaskDataSource;
-import org.example.taskmanager.login.UserDataSource;
-import org.example.taskmanager.login.UserRepository;
+import org.example.taskmanager.task.TaskDataSource;
+import org.example.taskmanager.login.repository.datasource.UserDataSource;
 import org.example.taskmanager.login.domain.ErrorWrapper;
 import org.example.taskmanager.login.domain.TaskParams;
 

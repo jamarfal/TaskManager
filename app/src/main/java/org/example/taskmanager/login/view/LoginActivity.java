@@ -20,16 +20,19 @@ import butterknife.OnClick;
 
 public class LoginActivity extends BaseActivity implements LoginPresenter.LoginView {
 
+    //region WIDGETS
     @BindView(R.id.login_input_email)
     EditText mInputEmail;
     @BindView(R.id.login_input_password)
     EditText mInputPassword;
     @BindView(R.id.root_layout)
     CoordinatorLayout rootLayout;
+    //endregion
 
     @Inject
     LoginPresenter loginPresenter;
 
+    //region ACTIVITY LIFE CYCLE
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,16 +40,21 @@ public class LoginActivity extends BaseActivity implements LoginPresenter.LoginV
         loginPresenter.setView(this);
         loginPresenter.initialize();
     }
+    //endregion
 
+    //region INHERITANCE METHODS
     @Override
     public int getLayoutId() {
         return R.layout.activity_login;
     }
+    //endregion
 
+    //region ONCLICK
     @OnClick(R.id.login_button)
     public void onLoginButtonClicked() {
         loginPresenter.doLogin(getUserName(), getPassword());
     }
+    //endregion
 
     //region VIEW IMPLEMENTATION
     @Override

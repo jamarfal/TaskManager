@@ -1,11 +1,10 @@
-package org.example.taskmanager.login;
+package org.example.taskmanager.task;
 
 import android.support.annotation.NonNull;
 
+import org.example.taskmanager.base.DataSourceProvider;
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.entities.User;
-
-import java.util.List;
 
 import javax.inject.Inject;
 

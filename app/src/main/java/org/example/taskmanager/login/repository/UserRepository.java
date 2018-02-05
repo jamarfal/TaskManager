@@ -1,6 +1,7 @@
-package org.example.taskmanager.login;
+package org.example.taskmanager.login.repository;
 
 import org.example.taskmanager.entities.User;
+import org.example.taskmanager.login.repository.datasource.UserDataSource;
 
 import java.util.List;
 

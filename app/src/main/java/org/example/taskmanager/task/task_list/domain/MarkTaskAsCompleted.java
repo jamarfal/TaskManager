@@ -3,11 +3,9 @@ package org.example.taskmanager.task.task_list.domain;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.example.taskmanager.base.Error;
 import org.example.taskmanager.base.UseCase;
 import org.example.taskmanager.entities.Task;
-import org.example.taskmanager.login.TaskDataSource;
-import org.example.taskmanager.login.domain.ErrorWrapper;
+import org.example.taskmanager.task.TaskDataSource;
 
 import javax.inject.Inject;
 

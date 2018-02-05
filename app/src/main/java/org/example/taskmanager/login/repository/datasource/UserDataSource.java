@@ -1,4 +1,4 @@
-package org.example.taskmanager.login;
+package org.example.taskmanager.login.repository.datasource;
 
 import org.example.taskmanager.entities.User;
 

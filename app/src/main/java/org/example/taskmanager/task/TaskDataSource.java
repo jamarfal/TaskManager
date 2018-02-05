@@ -1,4 +1,4 @@
-package org.example.taskmanager.login;
+package org.example.taskmanager.task;
 
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.entities.User;
