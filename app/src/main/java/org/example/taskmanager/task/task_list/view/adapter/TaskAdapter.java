@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import org.example.taskmanager.R;
-import org.example.taskmanager.entities.Task;
+import org.example.taskmanager.common.domain.entities.Task;
 
 import java.util.Collections;
 import java.util.List;
@@ -74,6 +74,13 @@ public class TaskAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public void updateTasks(List<Task> bunchOfTask) {
         this.bunchOfTask = bunchOfTask;
+    }
+
+    public void updateTask(Task task) {
+        int searchedTaskPosition = bunchOfTask.indexOf(task);
+        if (searchedTaskPosition != -1) {
+            notifyItemChanged(searchedTaskPosition);
+        }
     }
 
     static class TaskViewHolder extends RecyclerView.ViewHolder {

@@ -1,11 +1,11 @@
 
 package org.example.taskmanager.di;
 
-import org.example.taskmanager.common.APIService;
-import org.example.taskmanager.common.RetrofitClient;
-import org.example.taskmanager.common.RealmProvider;
-import org.example.taskmanager.task.TaskDataSource;
-import org.example.taskmanager.task.TaskRealmDataSource;
+import org.example.taskmanager.common.repository.APIService;
+import org.example.taskmanager.common.repository.RetrofitClient;
+import org.example.taskmanager.common.repository.RealmProvider;
+import org.example.taskmanager.task.create_task.repository.TaskDataSource;
+import org.example.taskmanager.task.create_task.repository.TaskRealmDataSource;
 import org.example.taskmanager.login.repository.datasource.UserDataSource;
 import org.example.taskmanager.login.repository.datasource.UserRealmDataSource;
 import org.example.taskmanager.login.repository.UserRepository;

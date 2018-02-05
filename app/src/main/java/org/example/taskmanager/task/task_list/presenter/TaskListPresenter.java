@@ -1,9 +1,9 @@
 package org.example.taskmanager.task.task_list.presenter;
 
-import org.example.taskmanager.common.ErrorBundle;
-import org.example.taskmanager.common.Presenter;
-import org.example.taskmanager.common.UseCase;
-import org.example.taskmanager.entities.Task;
+import org.example.taskmanager.common.error_control.ErrorBundle;
+import org.example.taskmanager.common.view.Presenter;
+import org.example.taskmanager.common.domain.UseCase;
+import org.example.taskmanager.common.domain.entities.Task;
 import org.example.taskmanager.task.task_list.domain.GetTasks;
 import org.example.taskmanager.task.task_list.domain.MarkTaskAsCompleted;
 
@@ -62,11 +62,21 @@ public class TaskListPresenter extends Presenter<TaskListPresenter.TaskListView>
         });
     }
 
+    public void doLogout() {
+        if (getView() != null) {
+            // Here, everything necessary for this user should be cleaned up
+            // We only close the view and back to login;
+            getView().close();
+        }
+    }
+
     //endregion
 
     public interface TaskListView extends Presenter.View {
         void loadTask(List<Task> bunchOfTasks);
 
         void updateTask(Task task);
+
+        void close();
     }
 }

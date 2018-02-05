@@ -13,10 +13,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.example.taskmanager.R;
-import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.common.BaseActivity;
-import org.example.taskmanager.entities.TaskType;
-import org.example.taskmanager.fruits.FruitsActivity;
+import org.example.taskmanager.application.TaskManagerApplication;
+import org.example.taskmanager.common.view.BaseActivity;
+import org.example.taskmanager.common.domain.entities.TaskType;
+import org.example.taskmanager.fruits.view.FruitsActivity;
 import org.example.taskmanager.task.create_task.presenter.CreateTaskPresenter;
 
 import java.util.List;
@@ -53,7 +53,7 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
     @Inject
     CreateTaskPresenter createTaskPresenter;
 
-    //region LIFE CYCLE
+    //region ACTIVITY METHODS
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,14 +64,12 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
         createTaskPresenter.initialize();
     }
 
-    // create an action bar button
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.logout_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-    // handle button activities
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -85,13 +83,11 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
     }
     //endregion
 
-    //region ABSTRACT IMPLEMENTATION
+    //region INHERITANCE METHODS
     @Override
     public int getLayoutId() {
         return R.layout.activity_create_task;
     }
-    //endregion
-
 
     @Override
     protected void initializeToolbar() {
@@ -100,7 +96,9 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
             toolbarTitle.setText(getString(R.string.title_create_task_activity));
         }
     }
+    //endregion
 
+    //region VIEW IMPLEMENTATION
     @Override
     public void fillTaskTypeSelector(List<TaskType> bunchOfTaskTypes) {
         ArrayAdapter<TaskType> adapter =
@@ -109,7 +107,6 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
         taskTypeSelector.setAdapter(adapter);
     }
 
-    //region VIEW IMPLEMENTATION
     @Override
     public void showError(String errorMessage) {
         Snackbar.make(rootLayout, errorMessage, Snackbar.LENGTH_SHORT).show();
@@ -146,6 +143,7 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
     }
 
 
+    //region PRIVATE AUXILIARY METHODS
     private void initializeDagger() {
         TaskManagerApplication app = (TaskManagerApplication) getApplication();
         app.getMainComponent().inject(this);
@@ -163,5 +161,6 @@ public class CreateTaskActivity extends BaseActivity implements CreateTaskPresen
         TaskType selectedTaskType = (TaskType) taskTypeSelector.getSelectedItem();
         return selectedTaskType.getId();
     }
+    //endregion
 
 }

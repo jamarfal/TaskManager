@@ -1,11 +1,11 @@
 package org.example.taskmanager.task.task_list.domain;
 
-import org.example.taskmanager.common.Error;
-import org.example.taskmanager.common.UseCase;
-import org.example.taskmanager.entities.Task;
-import org.example.taskmanager.entities.User;
+import org.example.taskmanager.common.error_control.Error;
+import org.example.taskmanager.common.domain.UseCase;
+import org.example.taskmanager.common.domain.entities.Task;
+import org.example.taskmanager.common.domain.entities.User;
 import org.example.taskmanager.login.repository.UserRepository;
-import org.example.taskmanager.login.domain.ErrorWrapper;
+import org.example.taskmanager.common.error_control.ErrorWrapper;
 
 import java.util.List;
 

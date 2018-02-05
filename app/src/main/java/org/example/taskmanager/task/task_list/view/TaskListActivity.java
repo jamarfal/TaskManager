@@ -5,11 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import org.example.taskmanager.R;
-import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.common.BaseActivity;
-import org.example.taskmanager.entities.Task;
+import org.example.taskmanager.application.TaskManagerApplication;
+import org.example.taskmanager.common.view.BaseActivity;
+import org.example.taskmanager.common.domain.entities.Task;
+import org.example.taskmanager.fruits.view.FruitsActivity;
 import org.example.taskmanager.task.task_list.presenter.TaskListPresenter;
 import org.example.taskmanager.task.task_list.view.adapter.TaskAdapter;
 
@@ -39,7 +42,7 @@ public class TaskListActivity extends BaseActivity implements TaskListPresenter.
     @Inject
     TaskListPresenter taskListPresenter;
 
-    //region LIFE CYCLE METHODS
+    //region ACTIVITY METHODS
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +55,32 @@ public class TaskListActivity extends BaseActivity implements TaskListPresenter.
 
         taskListPresenter.setView(this);
         taskListPresenter.initialize(userName);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.logout_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.logout_action) {
+            taskListPresenter.doLogout();
+        } else if (id == R.id.show_fruits_action) {
+            FruitsActivity.start(this);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void initializeToolbar() {
+        super.initializeToolbar();
+        if (toolbarTitle != null) {
+            toolbarTitle.setText(getString(R.string.title_task_list_activity));
+        }
     }
     //endregion
 
@@ -71,7 +100,13 @@ public class TaskListActivity extends BaseActivity implements TaskListPresenter.
 
     @Override
     public void updateTask(Task task) {
-        taskAdapter.notifyDataSetChanged();
+        taskAdapter.updateTask(task);
+        // taskAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void close() {
+        finish();
     }
     //endregion
 

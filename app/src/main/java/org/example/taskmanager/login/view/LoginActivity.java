@@ -6,8 +6,8 @@ import android.support.design.widget.Snackbar;
 import android.widget.EditText;
 
 import org.example.taskmanager.R;
-import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.common.BaseActivity;
+import org.example.taskmanager.application.TaskManagerApplication;
+import org.example.taskmanager.common.view.BaseActivity;
 import org.example.taskmanager.login.presenter.LoginPresenter;
 import org.example.taskmanager.task.create_task.view.CreateTaskActivity;
 import org.example.taskmanager.task.task_list.view.TaskListActivity;
@@ -71,8 +71,15 @@ public class LoginActivity extends BaseActivity implements LoginPresenter.LoginV
     public void showError(String errorMessage) {
         Snackbar.make(rootLayout, errorMessage, Snackbar.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void cleanForm() {
+        mInputPassword.setText("");
+        mInputEmail.setText("");
+    }
     //endregion
 
+    //region PRIVATE AUXILIARY METHODS
     private void initializeDagger() {
         TaskManagerApplication app = (TaskManagerApplication) getApplication();
         app.getMainComponent().inject(this);
@@ -85,5 +92,6 @@ public class LoginActivity extends BaseActivity implements LoginPresenter.LoginV
     private String getPassword() {
         return mInputPassword.getText().toString();
     }
+    //endregion
 }
 

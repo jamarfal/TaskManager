@@ -16,7 +16,7 @@
 
 package org.example.taskmanager.di;
 
-import org.example.taskmanager.fruits.FruitsActivity;
+import org.example.taskmanager.fruits.view.FruitsActivity;
 import org.example.taskmanager.login.view.LoginActivity;
 import org.example.taskmanager.task.create_task.view.CreateTaskActivity;
 import org.example.taskmanager.task.task_list.view.TaskListActivity;

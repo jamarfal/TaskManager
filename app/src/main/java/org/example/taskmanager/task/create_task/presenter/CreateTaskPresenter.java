@@ -1,12 +1,12 @@
 package org.example.taskmanager.task.create_task.presenter;
 
-import org.example.taskmanager.common.ErrorBundle;
-import org.example.taskmanager.common.ErrorMessageFactory;
+import org.example.taskmanager.common.error_control.ErrorBundle;
+import org.example.taskmanager.common.error_control.ErrorMessageFactory;
 import org.example.taskmanager.common.NumberConverter;
-import org.example.taskmanager.common.Presenter;
-import org.example.taskmanager.common.UseCase;
-import org.example.taskmanager.entities.TaskType;
-import org.example.taskmanager.login.domain.TaskParams;
+import org.example.taskmanager.common.view.Presenter;
+import org.example.taskmanager.common.domain.UseCase;
+import org.example.taskmanager.common.domain.entities.TaskType;
+import org.example.taskmanager.task.create_task.domain.TaskParams;
 import org.example.taskmanager.task.create_task.domain.CreateTask;
 
 import java.util.List;
@@ -18,7 +18,8 @@ import javax.inject.Inject;
  * Email: jalbertomartinfalcon@gmail.com
  */
 
-public class CreateTaskPresenter extends Presenter<CreateTaskPresenter.CreateTaskView> implements UseCase.UseCaseCallback<Void> {
+public class CreateTaskPresenter extends Presenter<CreateTaskPresenter.CreateTaskView>
+        implements UseCase.UseCaseCallback<Void> {
 
     private final CreateTask createTask;
 

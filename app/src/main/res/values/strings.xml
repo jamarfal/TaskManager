@@ -17,4 +17,11 @@
     <string name="prompt_duration">Duración en minutos</string>
     <string name="create_task_button">Crear tarea</string>
     <string name="successfull_created_task">La tarea ha sido creada y asignada</string>
+
+    <!-- Strings related to task list -->
+    <string name="title_task_list_activity">Mis tareas</string>
+
+    <!-- Strings related to fruit list -->
+    <string name="title_fruit_list_activity">Mis frutas</string>
+
 </resources>

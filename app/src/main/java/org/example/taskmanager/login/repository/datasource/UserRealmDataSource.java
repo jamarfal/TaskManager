@@ -2,8 +2,8 @@ package org.example.taskmanager.login.repository.datasource;
 
 import android.support.annotation.NonNull;
 
-import org.example.taskmanager.common.DataSourceProvider;
-import org.example.taskmanager.entities.User;
+import org.example.taskmanager.common.repository.DataSourceProvider;
+import org.example.taskmanager.common.domain.entities.User;
 
 import java.util.List;
 

@@ -1,10 +1,11 @@
 package org.example.taskmanager.login.presenter;
 
-import org.example.taskmanager.common.ErrorBundle;
-import org.example.taskmanager.common.Presenter;
-import org.example.taskmanager.common.UseCase;
-import org.example.taskmanager.entities.User;
-import org.example.taskmanager.entities.UserTypeDescriptor;
+import org.example.taskmanager.common.error_control.ErrorBundle;
+import org.example.taskmanager.common.error_control.ErrorMessageFactory;
+import org.example.taskmanager.common.view.Presenter;
+import org.example.taskmanager.common.domain.UseCase;
+import org.example.taskmanager.common.domain.entities.User;
+import org.example.taskmanager.common.domain.entities.UserTypeDescriptor;
 import org.example.taskmanager.login.domain.DoLogin;
 import org.example.taskmanager.login.domain.LoginParams;
 
@@ -15,7 +16,8 @@ import javax.inject.Inject;
  * Email: jalbertomartinfalcon@gmail.com
  */
 
-public class LoginPresenter extends Presenter<LoginPresenter.LoginView> implements UseCase.UseCaseCallback<User> {
+public class LoginPresenter extends Presenter<LoginPresenter.LoginView>
+        implements UseCase.UseCaseCallback<User> {
 
     private final DoLogin doLogin;
 
@@ -48,6 +50,7 @@ public class LoginPresenter extends Presenter<LoginPresenter.LoginView> implemen
             } else {
                 loginView.showTechnicianView(user.getUserName());
             }
+            loginView.cleanForm();
         }
     }
 
@@ -55,7 +58,8 @@ public class LoginPresenter extends Presenter<LoginPresenter.LoginView> implemen
     public void onError(ErrorBundle errorBundle) {
         if (getView() != null) {
             getView().hideLoading();
-            getView().showError("The credentials are incorrect");
+            String errorMessage = ErrorMessageFactory.createErrorMessage(errorBundle);
+            getView().showError(errorMessage);
         }
     }
     //endregion
@@ -69,6 +73,8 @@ public class LoginPresenter extends Presenter<LoginPresenter.LoginView> implemen
         void showTechnicianView(String userName);
 
         void showError(String errorMessage);
+
+        void cleanForm();
     }
     //endregion
 }

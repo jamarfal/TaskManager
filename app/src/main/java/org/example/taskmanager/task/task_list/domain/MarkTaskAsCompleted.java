@@ -3,9 +3,9 @@ package org.example.taskmanager.task.task_list.domain;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.example.taskmanager.common.UseCase;
-import org.example.taskmanager.entities.Task;
-import org.example.taskmanager.task.TaskDataSource;
+import org.example.taskmanager.common.domain.UseCase;
+import org.example.taskmanager.common.domain.entities.Task;
+import org.example.taskmanager.task.create_task.repository.TaskDataSource;
 
 import javax.inject.Inject;
 
