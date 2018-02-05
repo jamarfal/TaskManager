@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 public class Presenter<T extends Presenter.View> {
 

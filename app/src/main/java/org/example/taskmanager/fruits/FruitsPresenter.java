@@ -1,9 +1,9 @@
 package org.example.taskmanager.fruits;
 
-import org.example.taskmanager.base.ApiItemDto;
-import org.example.taskmanager.base.ErrorBundle;
-import org.example.taskmanager.base.Presenter;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.ApiItemDto;
+import org.example.taskmanager.common.ErrorBundle;
+import org.example.taskmanager.common.Presenter;
+import org.example.taskmanager.common.UseCase;
 
 import java.util.List;
 

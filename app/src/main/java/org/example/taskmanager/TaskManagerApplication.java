@@ -4,8 +4,8 @@ import android.app.Application;
 
 import org.example.taskmanager.di.DaggerMainComponent;
 import org.example.taskmanager.di.MainComponent;
-import org.example.taskmanager.base.LocalDbPopulator;
-import org.example.taskmanager.base.RealmProvider;
+import org.example.taskmanager.common.LocalDbPopulator;
+import org.example.taskmanager.common.RealmProvider;
 import org.example.taskmanager.login.repository.datasource.UserRealmDataSource;
 import org.example.taskmanager.login.repository.UserRepository;
 

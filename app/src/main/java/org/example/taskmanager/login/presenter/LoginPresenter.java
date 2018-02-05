@@ -1,8 +1,8 @@
 package org.example.taskmanager.login.presenter;
 
-import org.example.taskmanager.base.ErrorBundle;
-import org.example.taskmanager.base.Presenter;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.ErrorBundle;
+import org.example.taskmanager.common.Presenter;
+import org.example.taskmanager.common.UseCase;
 import org.example.taskmanager.entities.User;
 import org.example.taskmanager.entities.UserTypeDescriptor;
 import org.example.taskmanager.login.domain.DoLogin;

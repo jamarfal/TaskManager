@@ -1,6 +1,4 @@
-package org.example.taskmanager.base;
-
-import org.example.taskmanager.base.DataSourceProvider;
+package org.example.taskmanager.common;
 
 import javax.inject.Inject;
 

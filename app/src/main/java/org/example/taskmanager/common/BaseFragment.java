@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

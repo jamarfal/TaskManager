@@ -1,9 +1,9 @@
 
 package org.example.taskmanager.di;
 
-import org.example.taskmanager.base.APIService;
-import org.example.taskmanager.base.RetrofitClient;
-import org.example.taskmanager.base.RealmProvider;
+import org.example.taskmanager.common.APIService;
+import org.example.taskmanager.common.RetrofitClient;
+import org.example.taskmanager.common.RealmProvider;
 import org.example.taskmanager.task.TaskDataSource;
 import org.example.taskmanager.task.TaskRealmDataSource;
 import org.example.taskmanager.login.repository.datasource.UserDataSource;

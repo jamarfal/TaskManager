@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;

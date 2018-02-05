@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import org.example.taskmanager.entities.RealmInt;
 import org.example.taskmanager.entities.Task;

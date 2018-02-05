@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import java.io.IOException;
 import java.util.Collections;

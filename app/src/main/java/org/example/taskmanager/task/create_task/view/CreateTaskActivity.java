@@ -7,7 +7,6 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -15,7 +14,7 @@ import android.widget.TextView;
 
 import org.example.taskmanager.R;
 import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.base.BaseActivity;
+import org.example.taskmanager.common.BaseActivity;
 import org.example.taskmanager.entities.TaskType;
 import org.example.taskmanager.fruits.FruitsActivity;
 import org.example.taskmanager.task.create_task.presenter.CreateTaskPresenter;

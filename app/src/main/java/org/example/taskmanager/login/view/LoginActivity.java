@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 import org.example.taskmanager.R;
 import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.base.BaseActivity;
+import org.example.taskmanager.common.BaseActivity;
 import org.example.taskmanager.login.presenter.LoginPresenter;
 import org.example.taskmanager.task.create_task.view.CreateTaskActivity;
 import org.example.taskmanager.task.task_list.view.TaskListActivity;

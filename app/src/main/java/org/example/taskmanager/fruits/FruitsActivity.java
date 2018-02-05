@@ -8,9 +8,8 @@ import android.support.v7.widget.RecyclerView;
 
 import org.example.taskmanager.R;
 import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.base.ApiItemDto;
-import org.example.taskmanager.base.BaseActivity;
-import org.example.taskmanager.task.task_list.view.adapter.TaskAdapter;
+import org.example.taskmanager.common.ApiItemDto;
+import org.example.taskmanager.common.BaseActivity;
 
 import java.util.List;
 

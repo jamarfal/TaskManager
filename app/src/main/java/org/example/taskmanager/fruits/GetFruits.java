@@ -3,9 +3,9 @@ package org.example.taskmanager.fruits;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.example.taskmanager.base.ApiItemDto;
-import org.example.taskmanager.base.ItemsDataSource;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.ApiItemDto;
+import org.example.taskmanager.common.ItemsDataSource;
+import org.example.taskmanager.common.UseCase;
 
 import java.util.List;
 

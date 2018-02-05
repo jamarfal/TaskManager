@@ -3,8 +3,8 @@ package org.example.taskmanager.login.domain;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.example.taskmanager.base.Error;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.Error;
+import org.example.taskmanager.common.UseCase;
 import org.example.taskmanager.entities.User;
 import org.example.taskmanager.login.repository.UserRepository;
 

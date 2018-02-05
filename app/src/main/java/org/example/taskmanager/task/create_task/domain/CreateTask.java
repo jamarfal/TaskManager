@@ -4,8 +4,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 
-import org.example.taskmanager.base.Error;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.Error;
+import org.example.taskmanager.common.UseCase;
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.entities.User;
 import org.example.taskmanager.task.TaskDataSource;

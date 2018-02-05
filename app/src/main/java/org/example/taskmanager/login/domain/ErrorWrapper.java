@@ -1,7 +1,7 @@
 package org.example.taskmanager.login.domain;
 
-import org.example.taskmanager.base.Error;
-import org.example.taskmanager.base.ErrorBundle;
+import org.example.taskmanager.common.Error;
+import org.example.taskmanager.common.ErrorBundle;
 
 /**
  * Created by josealbertomartinfalcon on 4/2/18.

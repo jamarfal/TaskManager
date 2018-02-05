@@ -1,10 +1,10 @@
 package org.example.taskmanager.task.create_task.presenter;
 
-import org.example.taskmanager.base.ErrorBundle;
-import org.example.taskmanager.base.ErrorMessageFactory;
-import org.example.taskmanager.base.NumberConverter;
-import org.example.taskmanager.base.Presenter;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.ErrorBundle;
+import org.example.taskmanager.common.ErrorMessageFactory;
+import org.example.taskmanager.common.NumberConverter;
+import org.example.taskmanager.common.Presenter;
+import org.example.taskmanager.common.UseCase;
 import org.example.taskmanager.entities.TaskType;
 import org.example.taskmanager.login.domain.TaskParams;
 import org.example.taskmanager.task.create_task.domain.CreateTask;

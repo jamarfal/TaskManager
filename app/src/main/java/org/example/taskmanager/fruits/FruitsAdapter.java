@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.example.taskmanager.R;
-import org.example.taskmanager.base.ApiItemDto;
+import org.example.taskmanager.common.ApiItemDto;
 
 import java.util.Collections;
 import java.util.List;

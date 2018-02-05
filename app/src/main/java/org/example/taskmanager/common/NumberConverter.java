@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 /**
  * Created by jamarfal on 4/2/18.

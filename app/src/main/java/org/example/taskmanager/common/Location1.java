@@ -1,5 +1,5 @@
 
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

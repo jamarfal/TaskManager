@@ -1,8 +1,8 @@
 package org.example.taskmanager.task.task_list.presenter;
 
-import org.example.taskmanager.base.ErrorBundle;
-import org.example.taskmanager.base.Presenter;
-import org.example.taskmanager.base.UseCase;
+import org.example.taskmanager.common.ErrorBundle;
+import org.example.taskmanager.common.Presenter;
+import org.example.taskmanager.common.UseCase;
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.task.task_list.domain.GetTasks;
 import org.example.taskmanager.task.task_list.domain.MarkTaskAsCompleted;

@@ -1,13 +1,13 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import android.support.annotation.IntDef;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import static org.example.taskmanager.base.Error.Type.LOGIN_ERROR;
-import static org.example.taskmanager.base.Error.Type.TASK_PARAMS_INVALID;
-import static org.example.taskmanager.base.Error.Type.USER_NOT_FOUND;
+import static org.example.taskmanager.common.Error.Type.LOGIN_ERROR;
+import static org.example.taskmanager.common.Error.Type.TASK_PARAMS_INVALID;
+import static org.example.taskmanager.common.Error.Type.USER_NOT_FOUND;
 
 
 /**

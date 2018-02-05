@@ -1,4 +1,4 @@
-package org.example.taskmanager.base;
+package org.example.taskmanager.common;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

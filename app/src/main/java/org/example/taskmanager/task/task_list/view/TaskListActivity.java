@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 import org.example.taskmanager.R;
 import org.example.taskmanager.TaskManagerApplication;
-import org.example.taskmanager.base.BaseActivity;
+import org.example.taskmanager.common.BaseActivity;
 import org.example.taskmanager.entities.Task;
 import org.example.taskmanager.task.task_list.presenter.TaskListPresenter;
 import org.example.taskmanager.task.task_list.view.adapter.TaskAdapter;
